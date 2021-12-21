@@ -132,7 +132,7 @@ const Users = () => {
 
   const columns = [
 
-    {title: 'ID', field: 'users_id', width: 200},
+    {title: 'ID', field: 'id', width: 200},
     {title: 'NOMS', field: 'nom', width: 200},
     {title: 'PRENOMS', field: 'prenom', width: 200},
     {title: 'EMAILS', field: 'email', width: 200},
@@ -157,7 +157,7 @@ axios.get        ("http://localhost:4000/users")
        <MaterialTable style={{height: 400, width: '70%', left: '14%', top: 100}}
         columns={columns}
         data={data}
-        title={"Data Users:"}
+        title={"Data Users"}
          />
 
         </div>
